@@ -20,19 +20,19 @@ body {
 
 header {
   padding: 80px 35px;
-  background-color: var(--tertiary-color);
+  background-color: #222;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background-image: url("../images/hero-bg.png");
+  /*background-image: url("../images/hero-bg.jpg");*/
   background-size: auto;
   background-attachment:inherit;
   background-position: 60%;
   z-index: 9999;  
-  align-content: center;
+  align-content: space-between;
 }
 
 header a {
@@ -47,7 +47,7 @@ header nav {
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
@@ -58,7 +58,7 @@ header nav ul li a {
   padding: 10px 75px;
   margin: 0 40px;
   font-weight: lighter;
-  font-size: 1.75vw;
+  font-size: 0.75vw;
   text-shadow: 0 0 10px rgba(172, 172, 61, 0.5);
 }
 
@@ -72,7 +72,7 @@ header nav ul li a:hover {
 
 header h1 {
   font-weight: bold;
-  margin: 0;
+  margin-right: 350px;
   font-size: 36px;
   color: var(--secondary-color);
   text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
@@ -80,7 +80,7 @@ header h1 {
 
 /* HEADER / NAVBAR STYLES END */
 
-/* FOOTER STYLES START 
+/* FOOTER STYLES START */
 footer {
   background: var(--primary-color);
   padding: 40px 35px;
@@ -106,14 +106,14 @@ footer a {
 }
 /* END FOOTER STYLES */
 
-/* STYLE ALL SECTION TAGS *
+/* STYLE ALL SECTION TAGS */
 section {
   padding: 60px;
 }
 
-/* HERO STYLES START *
+/* HERO STYLES START */
 .hero {
-  background-image: url('../images/hero-bg.png');
+  background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -125,10 +125,10 @@ section {
 
 .hero-cta {
   width: 35%;
-  text-align: right;
+  text-align: center;
   margin: 3.5%;
   color: #fff;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.2;
 }
 
@@ -139,122 +139,10 @@ section {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.hero-form {
-  border: 3px solid var(--secondary-color);
-  background-color: rgba(255, 225, 56, 0.8);
-  padding: 20px;
-  color: var(--secondary-color);
-  width: 40%;
-  margin: 3.5%;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.hero-form button:hover {
-  background-color: var(--tertiary-color);  
-}
-
-.hero-form h3 {
-  font-size: 24px;
-  margin: 0;
-}
-.hero-form p {
-  margin: 5px 0 15px 0;
-}
-
-.form-input {
-  border: 1px solid var(--secondary-color);
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px; 
-  border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
-}
-
-.form-input:focus {
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-}
-
-.hero-form label {
-  margin: 0 5px;
-}
-
-.hero-form button {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 10px;
-} 
-
-.checkbox-wrapper input, .radio-wrapper input {
-  opacity: 0;
-}
-
-.checkbox-wrapper label, .radio-wrapper label {
-  position: relative;
-  left: 10px;
-  margin: 10px;
-  line-height: 1.6;
-}
-
-.checkbox-wrapper label::before, .radio-wrapper label::before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: rgba(255, 255, 255, 0.75);  
-  border: 1px solid var(--secondary-color);  
-  position: absolute;
-  top: -4px;
-  left: -30px;
-}
-
-.radio-wrapper label::before {
-  border-radius: 50%;
-}
-
-.radio-wrapper label::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: var(--secondary-color);
-  position: absolute;
-  left: -29px;
-  top: -3px;
-  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
-}
-
-.checkbox-wrapper label::after {
-  content: "";
-  height: 6px;
-  width: 14px;
-  border-left: 2px solid var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
-  position: absolute;
-  left: -26px;
-  top: 1px;
-  transform: rotate(-58deg);
-}
-
-.checkbox-wrapper input + label::after, 
-.radio-wrapper input + label::after {
-  content: none;
-}
-
-.checkbox-wrapper input:checked + label::after, 
-.radio-wrapper input:checked + label::after {
-  content: "";
-}
 /* HERO STYLES END */
 
 
-/* SECTION TITLE STYLES START *
+/* SECTION TITLE STYLES START */
 .section-title {
   font-size: 48px;
   border-bottom: 3px solid;
