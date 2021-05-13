@@ -162,9 +162,11 @@ section {
 }
 /* SECTION TITLE STYLES END */
 
-/* WHAT WE DO STYLES *
-
-.intro p {
+/* Who is d.Bull Style Starts*/
+#my-story {
+  background-color: #222;
+}
+.about p {
   line-height: 1.7;
   color: var(--tertiary-color);
   width: 80%;
@@ -172,15 +174,13 @@ section {
   font-size: 20px;
   text-align: center;
 }
-/* WHAT YOU DO STYLES END */
-
-
-/* WHAT YOU DO STYLES START *
-.steps { 
+/* Who is d.Bull Style Ends*/
+/*Customer Reviews Style Starts */
+.customers { 
   background: var(--primary-color);
 }
 
-.step {
+.customer {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
@@ -191,91 +191,97 @@ section {
   justify-content: space-between;
 }
 
-.step:last-child {
+.customer:last-child {
   border-bottom: none;
 }
 
-.step h3 {
+.customer h3 {
   color: var(--secondary-color);
   font-size: 46px;
   flex: 1 30%;
 }
 
-.step-info {
+.customer-info {
   flex: 2 70%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.step-img {
+.customer-img {
   flex: 1 12%;
   margin-right: 20px;
 }
 
-.step-img img {
+.customer-img img {
   max-width: 100%;
 }
 
-.step-text {
+.customer-text {
   flex: 12;
 }
 
-.step-text p {
+.customer-text p {
   color: var(--tertiary-color);
   font-size: 18px;
 }
 
-.step-text h4 {
+.customer-text h4 {
   font-size: 26px;
   line-height: 1.5;
   color: var(--secondary-color);
 }
-/* WHAT YOU DO STYLES END */
+/*d.Bull customers STYLES END */
 
-/* MEET THE TRAINERS START *
-.trainers {
+/* design reviews style starts */
+#crafted-collection {
+  background-color: orangered;
+}
+.designs {
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: #222;
 }
 
-.trainer {
+.design {
   margin: 20px;
   flex: 1;
   background: var(--secondary-color);
   color: var(--primary-color);
 }
 
-.trainer img {
+.design img {
   width: 100%;
 }
 
-.trainer-bio {
+.design-bio {
   padding: 25px;
   line-height: 1.3;
 }
 
-.trainer-bio h3 {
+.design-bio h3 {
   font-size: 28px;
 }
 
-.trainer-bio h4 {
+.design-bio h4 {
   font-weight: lighter;
   font-size: 22px;
   margin-bottom: 15px;
 }
 
-.trainer-bio p {
+.design-bio p {
   font-size: 17px;
 }
-/* TRAINER STYLES END */
+/* design STYLES END */
 
-/* REACH OUT STYLES START *
+/* Hit Me Up! Section Begins */
 .contact {
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
+  opacity: 0.6;
+  
 }
 
 .contact h2 {
@@ -352,7 +358,7 @@ section {
 }
 /* REACH OUT STYLES END */
 
-/* UTILITIES *
+/* UTILITIES */
 .text-left {
   text-align: left;
 }
@@ -365,7 +371,7 @@ section {
   display: flex;
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER *
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
     padding-bottom: 0;
@@ -405,7 +411,7 @@ section {
     width: 80%;
   }
   
-  .trainer {
+  .design {
     flex: 0 70%;
   }
   
@@ -414,40 +420,40 @@ section {
   }
 }
 
-/* MEDIA QUERY FOR TABLETS AND SMALLER *
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
   section {
     padding: 30px 15px;
   }
 
-  .step h3 {
+  .customer h3 {
     flex: 1 100%;
     text-align: center;
   }
 
-  .step-info {
+  .customer-info {
     flex: 2 100%;
     text-align: center;
     justify-content: center;
   }
 
-  .step-img {
+  .customer-img {
     flex: 0 32%;
     margin-right: 0;
     margin-top: 15px;
     margin-bottom: 15px;
   }
 
-  .step-text {
+  .customer-text {
     flex: 100%;  
   }
 
-  .trainer-bio h3, .trainer-bio h4 {
+  .design-bio h3, .design-bio h4 {
     display: block;
   }
 }
 
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER *
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
   .hero-form button {
     width: 100%;
@@ -461,7 +467,7 @@ section {
     width: 100%;
   }
 
-  .trainer {
+  .design {
     flex: 0 100%;
   }
 
