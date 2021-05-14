@@ -5,35 +5,57 @@
 }
 
 :root {
-  --primary-color: #800080;
-  --secondary-color: #fce138;
-  --tertiary-color: #008000;
+  --primary-color: #0a62d0;
+  --secondary-color: #e0e5e9;
+  --tertiary-color: #f3d849 ;
+  --dark: #191718;
+  --dark-shade: rgba(25, 23, 24, 0.75);
 }
 
 body {
-  color: var(--tertiary-color);
+  color: var(--dark);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+article.design {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+  margin-bottom: 25px;
+}
+
+div.design-bio {
+  text-align: center;
+  padding: 10px 20px;
+}
 
 /* HEADER / NAV BAR STYLES START */
 
 header {
-  padding: 80px 35px;
-  background-color: #222;
+  padding: 20px 35px;
+  background-color: var(--dark-shade);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  /*background-image: url("../images/hero-bg.jpg");*/
-  background-size: auto;
-  background-attachment:inherit;
-  background-position: 60%;
-  z-index: 9999;  
-  align-content: space-between;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  background-repeat: no-repeat;
+  z-index: 9999;
 }
+
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 50px;
+  color: var(--secondary-color);
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.35);
+}
+
 
 header a {
   text-decoration: none;
@@ -50,33 +72,26 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  text-shadow: 0 0 50px rgba(224, 224, 12, 0.904);
 }
 
 header nav ul li a {  
   background: var(--secondary-color);
   border-radius: 15px;
-  padding: 10px 75px;
+  padding: 10px 40px;
   margin: 0 40px;
   font-weight: lighter;
-  font-size: 0.75vw;
+  font-size: 0.85vw;
   text-shadow: 0 0 10px rgba(172, 172, 61, 0.5);
 }
 
 header nav ul li a:hover {
   background: var(--primary-color);
-  color: var(--tertiary-color);
+  color: var(--dark-shade);
   border-radius: 15px;
   text-shadow: none;
 }
 
-
-header h1 {
-  font-weight: bold;
-  margin-right: 350px;
-  font-size: 36px;
-  color: var(--secondary-color);
-  text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
-}
 
 /* HEADER / NAVBAR STYLES END */
 
@@ -120,13 +135,13 @@ section {
   flex-wrap: wrap;
   align-items: flex-start;
   background-attachment: fixed;
-  background-position: 80%;
+  background-position: 100%;
 }
 
 .hero-cta {
-  width: 35%;
+  width: 50%;
   text-align: center;
-  margin: 3.5%;
+  margin: 15.75%;
   color: #fff;
   font-size: 22px;
   line-height: 1.2;
@@ -151,6 +166,7 @@ section {
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.25);
 }
 
 .primary-border {
@@ -158,17 +174,17 @@ section {
 }
 
 .secondary-border {
-  border-color: var(--tertiary-color);
+  border-color: var(--dark);
 }
 /* SECTION TITLE STYLES END */
 
 /* Who is d.Bull Style Starts*/
 #my-story {
-  background-color: #222;
+  background-color: var(--dark-shade);
 }
 .about p {
   line-height: 1.7;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   width: 80%;
   margin: 0 auto;
   font-size: 20px;
@@ -184,7 +200,7 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid var(--tertiary-color);
+  border-bottom: 1px solid var(--dark);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -222,7 +238,7 @@ section {
 }
 
 .customer-text p {
-  color: var(--tertiary-color);
+  color: var(--dark);
   font-size: 18px;
 }
 
@@ -235,22 +251,30 @@ section {
 
 /* design reviews style starts */
 #crafted-collection {
-  background-color: orangered;
+  background-color: var(--secondary-color);
 }
+
+#crafted-collection h2 {  
+  color: #0a62d0;
+}
+
+
 .designs {
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #222;
+  background-color: var(--primary-color);  
+  border-radius: 25px;
 }
 
 .design {
   margin: 20px;
   flex: 1;
   background: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--primary-color);  
+  border-radius: 20px;
 }
 
 .design img {
@@ -279,7 +303,7 @@ section {
 
 /* Hit Me Up! Section Begins */
 .contact {
-  background: var(--tertiary-color);
+  background: var(--dark);
   opacity: 0.6;
   
 }
@@ -329,7 +353,7 @@ section {
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
@@ -350,7 +374,7 @@ section {
 
 .contact-form button:hover {
   color: var(--primary-color);
-  background: var(--tertiary-color);
+  background: var(--dark);
 }
 
 .contact-info a {
@@ -388,10 +412,12 @@ section {
     margin-top: 20px;
     width: 100%;
     justify-content: center;
+    flex-direction: column;
   }
 
   header nav ul li a {
-    font-size: 20px;
+    font-size: 18px;
+    margin: auto;
   }
 
   footer h2, footer div {
