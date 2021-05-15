@@ -126,6 +126,26 @@ footer a {
 section {
   padding: 60px;
 }
+/* SECTION TITLE STYLES START */
+.section-title {
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: var(--secondary-color);
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.25);
+}
+
+.primary-border {
+  border-color: var(--primary-color);
+}
+
+.secondary-border {
+  border-color: var(--dark);
+}
+/* SECTION TITLE STYLES END */
 
 /* HERO STYLES START */
 .hero {
@@ -162,9 +182,23 @@ hero.responsive {
 
 /* HERO STYLES END */
 
+/* Who is d.Bull Style Starts*/
+#my-story {
+  background-color: var(--dark-shade);
+}
+.about p {
+  line-height: 1.7;
+  color: var(--primary-color);
+  width: 80%;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+/* Who is d.Bull Style Ends*/
+
 /* design reviews style starts */
 #crafted-collection {
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-shade);
 }
 
 #crafted-collection h2 {  
@@ -186,13 +220,14 @@ hero.responsive {
   flex: 1;
   background: var(--tertiary-shade);
   color: var(--primary-color);  
-  border-radius: 20px;
+  border-radius: 25px;
+  padding-bottom: 20px;
 }
 
 .design img {
   width: 100%;
   background-color: var(--tertiary-shade);
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
 }
 
 .design img:hover {
@@ -221,98 +256,6 @@ hero.responsive {
 }
 /* design STYLES END */
 
-
-/* SECTION TITLE STYLES START */
-.section-title {
-  font-size: 48px;
-  border-bottom: 3px solid;
-  color: var(--secondary-color);
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-  text-shadow: 0 0 10px rgba(255, 255, 0, 0.25);
-}
-
-.primary-border {
-  border-color: var(--primary-color);
-}
-
-.secondary-border {
-  border-color: var(--dark);
-}
-/* SECTION TITLE STYLES END */
-
-/* Who is d.Bull Style Starts*/
-#my-story {
-  background-color: var(--dark-shade);
-}
-.about p {
-  line-height: 1.7;
-  color: var(--primary-color);
-  width: 80%;
-  margin: 0 auto;
-  font-size: 20px;
-  text-align: center;
-}
-/* Who is d.Bull Style Ends*/
-/*Customer Reviews Style Starts */
-.customers { 
-  background: var(--primary-color);
-}
-
-.customer {
-  margin: 50px auto;
-  padding-bottom: 50px;
-  width: 80%;
-  border-bottom: 1px solid var(--dark);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.customer:last-child {
-  border-bottom: none;
-}
-
-.customer h3 {
-  color: var(--secondary-color);
-  font-size: 46px;
-  flex: 1 30%;
-}
-
-.customer-info {
-  flex: 2 70%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.customer-img {
-  flex: 1 12%;
-  margin-right: 20px;
-}
-
-.customer-img img {
-  max-width: 100%;
-}
-
-.customer-text {
-  flex: 12;
-}
-
-.customer-text p {
-  color: var(--dark);
-  font-size: 18px;
-}
-
-.customer-text h4 {
-  font-size: 26px;
-  line-height: 1.5;
-  color: var(--secondary-color);
-}
-/*d.Bull customers STYLES END */
 
 
 /* Hit Me Up! Section Begins */
@@ -526,10 +469,10 @@ hero.responsive {
   }
 }@-webkit-keyframes shake {
   from{
-    -webkit-transform: rotate(15deg);
+    -webkit-transform: rotate(7deg);
   }
   to{
-    -webkit-transform: rotate(-15deg);
+    -webkit-transform: rotate(-7deg);
     -webkit-transform-origin: center center;
   }
 }
