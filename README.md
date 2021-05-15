@@ -7,8 +7,13 @@ A website that offers a glimpse into the creative world of D. Bull
 * HTML
 * CSS
 
+## Usage
+use the link to visit the page.  Here are screenshots to make it easier to find.
+
+
+
 ## Website
-https://bullbotbam.github.io/dbullaustintx
+https://bullbotbam.github.io/cssExploration/
 
 ## Contribution
-Made with by Donald Bull
+Made by Donald Bull
