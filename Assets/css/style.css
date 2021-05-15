@@ -470,3 +470,31 @@ hero.responsive {
     -webkit-transform-origin: center center;
   }
 }
+<style>
+.fa {
+  padding: 20px;
+  font-size: 60px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.social:hover {
+    opacity: 0.5;
+}
+.fa-google {
+  background: var(--primary-color);
+  color: white;
+}
+
+.fa-linkedin {
+  background: var(--tertiary-color);
+  color: white;
+}
+.fa-instagram {
+  background: var(--dark-shade);
+  color: white;
+}
+</style>
