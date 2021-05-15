@@ -8,7 +8,8 @@
   --primary-color: #0a62d0;
   --secondary-color: #e0e5e9;
   --tertiary-color: #f3d849 ;
-  --dark: #191718;
+  --tertiary-shade: rgba(243, 216, 73, 0.5);
+  --dark: #191718; 
   --dark-shade: rgba(25, 23, 24, 0.75);
 }
 
@@ -138,6 +139,11 @@ section {
   background-position: 100%;
 }
 
+hero.responsive {
+  width: 100%;
+  height: auto;
+}
+
 .hero-cta {
   width: 50%;
   text-align: center;
@@ -151,10 +157,69 @@ section {
   font-style: italic;
   font-size: 55px;
   color: var(--primary-color);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
 /* HERO STYLES END */
+
+/* design reviews style starts */
+#crafted-collection {
+  background-color: var(--secondary-color);
+}
+
+#crafted-collection h2 {  
+  color: #0a62d0;
+}
+
+.designs {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: var(--primary-color);  
+  border-radius: 25px;
+}
+
+.design {
+  margin: 20px;
+  flex: 1;
+  background: var(--tertiary-shade);
+  color: var(--primary-color);  
+  border-radius: 20px;
+}
+
+.design img {
+  width: 100%;
+  background-color: var(--tertiary-shade);
+  border-radius: 25px;
+}
+
+.design img:hover {
+  -webkit-animation:shake .3s ease-in-out .1s infinite alternate;
+}
+
+
+.design-bio {
+  padding: 25px;
+  line-height: 1.3;
+}
+
+.design-bio h3 {
+  font-size: 28px;
+}
+
+.design-bio h4 {
+  font-weight: lighter;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.design-bio p {
+  font-size: 26px;
+  text-align: justify;
+}
+/* design STYLES END */
 
 
 /* SECTION TITLE STYLES START */
@@ -249,57 +314,6 @@ section {
 }
 /*d.Bull customers STYLES END */
 
-/* design reviews style starts */
-#crafted-collection {
-  background-color: var(--secondary-color);
-}
-
-#crafted-collection h2 {  
-  color: #0a62d0;
-}
-
-
-.designs {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: var(--primary-color);  
-  border-radius: 25px;
-}
-
-.design {
-  margin: 20px;
-  flex: 1;
-  background: var(--secondary-color);
-  color: var(--primary-color);  
-  border-radius: 20px;
-}
-
-.design img {
-  width: 100%;
-}
-
-.design-bio {
-  padding: 25px;
-  line-height: 1.3;
-}
-
-.design-bio h3 {
-  font-size: 28px;
-}
-
-.design-bio h4 {
-  font-weight: lighter;
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.design-bio p {
-  font-size: 17px;
-}
-/* design STYLES END */
 
 /* Hit Me Up! Section Begins */
 .contact {
@@ -409,15 +423,17 @@ section {
   }
 
   header nav ul {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
     justify-content: center;
     flex-direction: column;
+    align-content: stretch;
   }
 
   header nav ul li a {
     font-size: 18px;
     margin: auto;
+    background: none;
   }
 
   footer h2, footer div {
@@ -507,5 +523,13 @@ section {
 
   .contact-form {
     order: 3;
+  }
+}@-webkit-keyframes shake {
+  from{
+    -webkit-transform: rotate(15deg);
+  }
+  to{
+    -webkit-transform: rotate(-15deg);
+    -webkit-transform-origin: center center;
   }
 }
