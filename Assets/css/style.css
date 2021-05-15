@@ -186,14 +186,7 @@ hero.responsive {
 #my-story {
   background-color: var(--dark-shade);
 }
-.about p {
-  line-height: 1.7;
-  color: var(--primary-color);
-  width: 80%;
-  margin: 0 auto;
-  font-size: 30px;
-  text-align: center;
-}
+
 /* Who is d.Bull Style Ends*/
 
 /* design reviews style starts */
