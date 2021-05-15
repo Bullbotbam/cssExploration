@@ -470,7 +470,7 @@ hero.responsive {
     -webkit-transform-origin: center center;
   }
 }
-<style>
+
 .fa {
   padding: 20px;
   font-size: 60px;
@@ -497,4 +497,3 @@ hero.responsive {
   background: var(--dark-shade);
   color: white;
 }
-</style>
