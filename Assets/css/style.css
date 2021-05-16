@@ -39,6 +39,10 @@ header {
 }
 
 header h1 {
+  background-color: var(--dark);
+  border: 4px solid goldenrod;
+  border-radius: 25px;
+  padding: 5px;
   font-weight: bold;
   margin: 0;
   font-size: 50px;
@@ -157,7 +161,8 @@ hero.responsive {
   text-align: center;
   margin: 15.75%;
   color: #fff;
-  font-size: 22px;
+  font-size: 32px;
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.35);
   line-height: 1.2;
 }
 
@@ -241,6 +246,7 @@ div.design-bio {
   color: var(--primary-color);  
   border-radius: 25px;
   padding-bottom: 20px;
+  border: 4px solid goldenrod;
 }
 
 .design img {
