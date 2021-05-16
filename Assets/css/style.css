@@ -78,6 +78,7 @@ header nav ul {
 
 header nav ul li a {  
   background: var(--secondary-color);
+  border: 4px solid goldenrod;
   border-radius: 15px;
   padding: 10px 40px;
   margin: 0 40px;
@@ -99,17 +100,21 @@ header nav ul li a:hover {
 /* FOOTER STYLES START */
 footer {
   background: var(--primary-color);
-  padding: 40px 35px;
+  padding: 20px 15px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
 }
 
-footer h2 {
+footer h2 { 
+  font-size: 28px;
+  border-bottom: 3px solid var(--dark);
   color: var(--secondary-color);
-  font-size: 30px;
-  margin: 0;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.25);
 }
 
 footer div {
@@ -120,6 +125,22 @@ footer div {
 footer a {
   color: var(--secondary-color);
 }
+
+.footnotes {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-tag {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-shadow: 0 0 50px rgba(224, 224, 12, 0.904);
+}
+
 /* END FOOTER STYLES */
 
 /* STYLE ALL SECTION TAGS */
@@ -149,6 +170,7 @@ section {
 
 /* HERO STYLES START */
 .hero {
+  background-color: var(--dark);
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   display: flex;
@@ -175,9 +197,8 @@ hero.responsive {
 
 .hero-cta h2 {
   font-style: italic;
-  font-size: 55px;
+  font-size: 75px;
   color: var(--primary-color);
-  text-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
 /* HERO STYLES END */
@@ -185,13 +206,32 @@ hero.responsive {
 /* Who is d.Bull Style Starts*/
 #my-story {
   background-color: var(--dark-shade);
+  font-size: 26px;  
+  padding: 25px;
+  }
+
+.flex-about {
+  display: flex;
+  border: 6px solid goldenrod;
+  border-radius: 25px;
+  justify-content: center;
+
+
 }
+.flex-split {
+  padding: 35px;
+  text-align: justify;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.075);
+  flex: 1;
+}
+
 
 /* Who is d.Bull Style Ends*/
 
 /* design reviews style starts */
 #crafted-collection {
-  background-color: var(--tertiary-shade);
+  background-color: goldenrod;
+  opacity: 0.80;
 }
 
 #crafted-collection h2 {  
@@ -205,7 +245,7 @@ hero.responsive {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: var(--primary-color);  
+  background-color: var(--primary-color);
   border-radius: 25px;
 }
 
@@ -255,7 +295,7 @@ hero.responsive {
 /* Hit Me Up! Section Begins */
 .contact {
   background: var(--dark);
-  opacity: 0.6;
+  opacity: 0.75;
   
 }
 
@@ -276,7 +316,8 @@ hero.responsive {
 
 .contact-info iframe {
   height: 400px;
-}
+  border-radius: 25px;
+  }
 
 .contact-info div {
   color: white;
@@ -295,7 +336,6 @@ hero.responsive {
 }
 
 .contact-form input, .contact-form textarea {
-  border: 1px solid var(--secondary-color);
   display: block;
   padding: 7px 15px;
   font-size: 16px;
@@ -303,7 +343,8 @@ hero.responsive {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
-  border-radius: 10px;
+  border-radius: 15px;
+  border: 4px solid goldenrod;
   background-color: rgba(255, 255, 255, 0.75);
 }
 
@@ -314,13 +355,13 @@ hero.responsive {
 
 .contact-form button {
   width: 100%;
-  border: none;
   background: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
-  border-radius: 10px;
+  border-radius: 15px;
+  border: 4px solid goldenrod;
 }
 
 .contact-form button:hover {
@@ -331,16 +372,10 @@ hero.responsive {
 .contact-info a {
   color: var(--primary-color);
 }
+
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
 
 .flex-row {
   display: flex;
@@ -485,8 +520,8 @@ hero.responsive {
     opacity: 0.5;
 }
 .fa-google {
-  background: var(--primary-color);
-  color: white;
+  background: white;
+  color: var(--primary-color);
 }
 
 .fa-linkedin {
